@@ -14,8 +14,10 @@ public class LoginGeneratorTest {
 
     @Test
     public void generateLoginForNomAndPrenom() throws Exception {
-        String gene1 = loginGenerator.generateLoginForNomAndPrenom("Paul","Durand");
+        String gene1 = loginGenerator.generateLoginForNomAndPrenom("Durand", "Paul");
         assertEquals(gene1,"PDUR");
+        String gene2 = loginGenerator.generateLoginForNomAndPrenom("Ralling", "John");
+        assertEquals(gene2, "JRAL2");
     }
 
 }
